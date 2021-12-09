@@ -1,17 +1,16 @@
-// Code your solutions in this file
+// // Code your solutions in this file
 
-
-// for (let age = 30; age < 40; age++) {
+// for(let age = 30; age < 40; age++) {
 //   console.log(`I'm ${age} years old. Happy birthday to me!`);
 // }
 
-// const gifts = ["teddy bear", "drone", "doll"];
+
+// const gifts = ['teddy bear', 'drone', 'doll'];
 
 // function wrapGifts(gifts) {
-//   for (let i = 0; i < gifts.length; i++) {
+//   for(let i = 0; i < gifts.length; i++) {
 //     console.log(`Wrapped ${gifts[i]} and added a bow!`);
 //   }
-
 //   return gifts;
 // }
 
@@ -19,22 +18,25 @@
 
 
 
-const names = ['mike', 'joe', 'kev'];
 
+
+const names = ['mike', 'april', 'jacob']
+
+const event = 'Summer bash';
+
+const message = [];
 
 function writeCards(names, event) {
-  let birthday = []; // i don't understand why birthday is assigned a value of an empty object 
-  event = "surprise";
-  for (let i = 0; i < names.length; i++) {
-    birthday[i] = ('Thank you, ' + names[i] + ', for the wonderful ' + event +' gift!')
+  for(let i = 0; i < names.length; i++) {
+    message[i] = "Thank you, " + names[i] + ", for the wonderful " + event + " gift!";
   }
-  return birthday;
+  return message;
+  // collect them in a new array and RETURN this array at the end of the function
 }
-// ask for help in js prework support on how to use interpolation
 
 function countDown(number) {
-let countDown = 10;
-while (number >= 0) {
-  console.log(number--);
-}
+  let countDown = 10;
+  while(number >= 0) {
+    console.log(number--);
+  }
 }
